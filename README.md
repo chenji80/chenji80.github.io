@@ -1,2 +1,3 @@
-# chenji80.github.io
-我的第一个github Page
+
+## 陈吉的博客
+博客地址 [https://chenji80.github.io/](https://chenji80.github.io/)
