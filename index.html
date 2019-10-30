@@ -1,55 +1,13 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>FirstApp</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
-  <style>
-    #div1{
-      position: fixed;
-      left:0;
-      right:0;
-      bottom: 0;
-      top:0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,.6);
-      color: #fff;
-      z-index: 100000;
-      display: none;
-    }
-    #video1{
-      position: relative;
-      z-index: 1;
-    }
-  </style>
-</head>
-<body>
-  <iframe width="100%" height="100%" src="https://3qk.easyvaas.com/show/play/index?vid=7GbOlcbdWNN0TZDP"></<iframe>
-</body>
-<script>
-  var myVid=document.getElementById("video1");
-  function getCurTime()
-  { 
-    var time = parseInt(myVid.currentTime)
-    return time
-  } 
-  var  limer = setInterval(() => {
-    if(getCurTime()===10){
-      $("#div1").show()
-      myVid.pause()
-      
-    }
-  }, 1000);
-  
-
-  $("#div1").click(function(){
-    myVid.play()
-    $("#div1").hide()
-    clearInterval(limer)
-  })
-</script>
-</html>
-
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><link rel=stylesheet href=/style.css><title>adidas-id-card</title><script>window.onload = function(){
+    /*720代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是
+      为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+          getRem(720,100)
+      };
+      window.onresize = function(){
+          getRem(720,100)
+      };
+      function getRem(pwidth,prem){
+          var html = document.getElementsByTagName("html")[0];
+          var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+          html.style.fontSize = oWidth/pwidth*prem + "px";
+      }</script><link href=/css/app.0bd971cc.css rel=preload as=style><link href=/css/chunk-vendors.745dfe19.css rel=preload as=style><link href=/js/app.fbf9a231.js rel=preload as=script><link href=/js/chunk-vendors.fd679360.js rel=preload as=script><link href=/css/chunk-vendors.745dfe19.css rel=stylesheet><link href=/css/app.0bd971cc.css rel=stylesheet></head><body><div id=app></div><script src=/js/chunk-vendors.fd679360.js></script><script src=/js/app.fbf9a231.js></script></body></html>
